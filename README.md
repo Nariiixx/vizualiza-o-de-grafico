@@ -5,4 +5,23 @@
 <ul>pandas</ul>
 <ul>seaborn</ul>
 <ul>matplotlib</ul>
+<p></p>
+<p>código final</p>
+<p>plt.figure()
+plt.subplot(1, 2, 1)
+srn.histplot(data.PIB, kde=True, bins=10).set(title='PIB')
+
+plt.subplot(1, 2, 2)
+srn.histplot(data.VALOREMPENHO, kde=True, bins=10).set(title='valor empenho')
+
+
+agrupado = data.sort_values('PIB').head(10)
+agrupado = agrupado.iloc[:,1:3]
+agrupado.plot.bar(x='MUNICIPIO', y='PIB', color='gray').set(title='10 municípios com  PIB')
+
+
+agrupado = data.sort_values('VALOREMPENHO').head(10)
+agrupado = agrupado.iloc[:,[1,3]]
+agrupado.plot.bar(x='MUNICIPIO', y='VALOREMPENHO', color='gray').set(title='10 municípios com valor empenho')
+</p>
 
