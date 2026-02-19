@@ -6,22 +6,20 @@
 <ul>seaborn</ul>
 <ul>matplotlib</ul>
 <p></p>
-<p>código final</p>
-<p>plt.figure()
-plt.subplot(1, 2, 1)
-srn.histplot(data.PIB, kde=True, bins=10).set(title='PIB')
+<h3>código final:</h3>
+<p>plt.figure()</p>
+<p>plt.subplot(1, 2, 1)</p>
+<p>srn.histplot(data.PIB, kde=True, bins=10).set(title='PIB')</p>
+<p> </p>
+<p>plt.subplot(1, 2, 2)</p>
+<p>srn.histplot(data.VALOREMPENHO, kde=True, bins=10).set(title='valor empenho')</p>
+<p></p>
+<p>agrupado = data.sort_values('PIB').head(10)</p>
+<p>agrupado = agrupado.iloc[:,1:3]</p>
+<p>agrupado.plot.bar(x='MUNICIPIO', y='PIB', color='gray').set(title='10 municípios com  PIB')</p>
 
-plt.subplot(1, 2, 2)
-srn.histplot(data.VALOREMPENHO, kde=True, bins=10).set(title='valor empenho')
 
-
-agrupado = data.sort_values('PIB').head(10)
-agrupado = agrupado.iloc[:,1:3]
-agrupado.plot.bar(x='MUNICIPIO', y='PIB', color='gray').set(title='10 municípios com  PIB')
-
-
-agrupado = data.sort_values('VALOREMPENHO').head(10)
-agrupado = agrupado.iloc[:,[1,3]]
-agrupado.plot.bar(x='MUNICIPIO', y='VALOREMPENHO', color='gray').set(title='10 municípios com valor empenho')
-</p>
+<p>agrupado = data.sort_values('VALOREMPENHO').head(10)</p>
+<p>agrupado = agrupado.iloc[:,[1,3]]</p>
+<p>agrupado.plot.bar(x='MUNICIPIO', y='VALOREMPENHO', color='gray').set(title='10 municípios com valor empenho')</p>
 
