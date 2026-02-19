@@ -10,7 +10,7 @@
 <p>plt.figure()</p>
 <p>plt.subplot(1, 2, 1)</p>
 <p>srn.histplot(data.PIB, kde=True, bins=10).set(title='PIB')</p>
-<p> </p>
+<br>
 <p>plt.subplot(1, 2, 2)</p>
 <p>srn.histplot(data.VALOREMPENHO, kde=True, bins=10).set(title='valor empenho')</p>
 <p></p>
