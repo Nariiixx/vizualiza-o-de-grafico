@@ -13,12 +13,11 @@
 <br>
 <p>plt.subplot(1, 2, 2)</p>
 <p>srn.histplot(data.VALOREMPENHO, kde=True, bins=10).set(title='valor empenho')</p>
-<p></p>
+<br>
 <p>agrupado = data.sort_values('PIB').head(10)</p>
 <p>agrupado = agrupado.iloc[:,1:3]</p>
 <p>agrupado.plot.bar(x='MUNICIPIO', y='PIB', color='gray').set(title='10 municípios com  PIB')</p>
-
-
+<br>
 <p>agrupado = data.sort_values('VALOREMPENHO').head(10)</p>
 <p>agrupado = agrupado.iloc[:,[1,3]]</p>
 <p>agrupado.plot.bar(x='MUNICIPIO', y='VALOREMPENHO', color='gray').set(title='10 municípios com valor empenho')</p>
